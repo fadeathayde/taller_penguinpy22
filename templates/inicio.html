@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <!-- este es el titulo-->
+        <title>Mi primera pagina web</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Comedor Cirilo</h1>
+        <a href="{{ url_for('inicio') }}">Inicio</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
+
+    <!-- challenge:
+    crear un titulo con h2 con el texto:
+    Mi nombre es....
+    Crear un titulo h3 con el texto:
+    Y estoy en Penguin porque....
+    -->
+        <h2><marquee><em>Las Mejores empanadas del condado</em></marquee></h2>
+        <h3>Pedidos al: 0904 2333</h3>
+    
+    <img src="static/empaditas.jpeg" alt="empanadas de las buenas" width="600" height="400">
+
+    </body>
+</html>
